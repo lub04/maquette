@@ -2,8 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/html5-seeklogo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>Hello again HTML/CSS</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
@@ -11,36 +17,39 @@
   <header>
     <nav>
       <img src="assets/images/html5-seeklogo.svg" alt="logo HTML5 Black and White" class="logo">
+      <H1 id="haut-page">Hello again HTML/CSS</H1>
       <div class="navigation">
-        <a href="">Accueil</a>
-        <a href="">Articles</a>
-        <a href="">About</a>
+        <a href="#haut-page">Accueil</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
-    <div>
-      <H1>Hello again HTML/CSS</H1>
-      <img src="http://techno.pvm.free.fr/images/Cours/4eme/html_css_advanced_topic.jpg" alt="Logos HTML/CSS">
+    <div class="titre">
+      <a class="logo1" href="https://fr.wikipedia.org/wiki/CSS" target="_blank"><img class="logo1" src="assets/images/css-3-seeklogo.svg" alt="Logos HTML/CSS" title="Click to go to the wikipedia page"></a>
+      <h2 class="titres-articles">Articles</h2>
+      <a class="logo2" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank"><img class="logo2" src="assets/images/html5-without-wordmark-color-seeklogo.svg" alt="logos HTML/CSS" title="Click to go to the wikipedia page"></a>
     </div>
   </header>
   <main>
     <section class="articles">
       
-      <article>
-        <h2>Tout sur le HTML</h2>
+      <article class="HTML">
+        <h3 class="titres-articles">HTML5</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, repudiandae! Aliquid assumenda officia veritatis doloribus natus provident corporis repellat cupiditate eum! Repellendus, ad. Ad praesentium minus, optio laudantium officia atque.
         Nemo repellendus, rerum labore, ab animi voluptate quia fugiat quo repellat eos suscipit earum odio, aut accusantium expedita quis. Nulla aspernatur tempora debitis laudantium repudiandae est placeat eos autem vero.
         Amet dolorem aspernatur sunt nostrum quibusdam nam maiores dolor quasi, perspiciatis nemo, ad perferendis sit cumque itaque placeat molestias. Recusandae ipsam dolorum eveniet sapiente? Sapiente odio tempore iusto sed adipisci?</p>
+        
       </article>
       
-      <article>
-        <h2>Tout sur le CSS</h2>
+      <article class="HTML">
+        <h3 class="titres-articles">CSS3</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ab placeat esse. Nam quaerat, nihil vel neque magni ex a accusantium sunt. Pariatur placeat labore molestias voluptatem necessitatibus voluptate magnam!
         Ullam ratione quibusdam asperiores! Quis iste maxime minima nisi aliquid quae eaque doloremque odio voluptates! In a cumque laudantium quas debitis autem? Nesciunt illo necessitatibus non quibusdam sequi, maxime iste?
-        Delectus, quibusdam libero ipsum reiciendis amet beatae odit a autem laborum voluptatum soluta dolor fuga ratione possimus minima hic optio cupiditate inventore nostrum rem! Quis tempore qui esse quidem repudiandae.</p>
+        Delectus, quibusdam libero ipsum reiciendis amet beatae odit a autem laborum voluptatum soluta dolor fuga ratione possimus minima hic optio cupiditate inventore nostrum rem! Quis tempore qui esse quidem repudiandae. Lorem ipsum dolor sit amet consectetur adipisi lorem </p>
       </article>
     </section>
-    <section>
-      <h2>A propos</h2>
+    <section class="A-propos">
+      <h2 id="about">About</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim cumque fugiat adipisci expedita praesentium id assumenda dicta minus labore recusandae aliquid similique dolorum omnis doloribus soluta, reprehenderit sunt laboriosam?
         Ex numquam esse repellendus excepturi! Odio totam ea expedita iusto corrupti quos laboriosam. Tempore hic doloribus voluptates officia, maiores ex dolor corporis suscipit amet quam fugiat quasi obcaecati laudantium impedit!
@@ -50,19 +59,40 @@
         Dolorum libero quas mollitia amet maiores nisi, fuga expedita est doloribus exercitationem fugiat veritatis, tenetur nulla aspernatur animi sequi voluptas obcaecati temporibus magnam natus necessitatibus soluta! Harum corrupti ea cumque.
       </p>
     </section>
-    <section>
-      <h2>contact</h2>
-      <form action="" method="">
-        <label for="name">Nom:</label>
-        <input type="text" id="name">
-        <label for="firstname">Prénom:</label>
-        <input type="text" id="firstname">
-        <label for="mail">Adresse mail:</label>
-        <input type="email" id="mail">
-        <label for="message">Tapez ici votre message:</label>
-        <textarea name="Votre message" id="message" cols="30" rows="10"></textarea>
+    
+    <section >
+      <h2 id="contact">Contact</h2>
+      <form action="" method="" class="Contact">
+        <div class="nom">
+          <label for="name">Lastname:</label>
+          <input class="texte-nom" type="text" id="name">
+        </div>
+        <div class="prenom">
+          <label for="firstname">Firstname:</label>
+          <input class="texte-prenom" type="text" id="firstname">
+        </div>
+        <div class="email">
+          <label for="mail">Mail adress :</label>
+          <input class="textmail" type="email" id="mail">
+        </div>
+        <div class="texte">
+          <label for="message">Write your message here :</label>
+          <textarea class="message-texte" name="Votre message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <button class="bouton" title="Click to send your message">Send</button>
       </form>
     </section>
+    <footer>
+      <p>
+        This incredible work about HTML/CSS was made by :
+      </p>
+      <p>
+        Lubin Chauvreau
+      </p>
+      <p>
+        Cliquez <a href="#haut-page">ici</a> pour remonter en haut de la page !
+      </p>
+    </footer>
   </main>
 </body>
 </html>

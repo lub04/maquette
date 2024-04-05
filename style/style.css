@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --main-color:#EF036C;
-  --secondary-color:#31EC56;
+  --main-color:#4e4983;
+  --secondary-color:#f5874a;
+  --third-color:#a34632;
 }
 body{
   a{
@@ -12,13 +13,54 @@ body{
     font-size: x-large;
     font-weight: 600;
   }
+  a:hover{
+    color:var(--third-color);
+    text-decoration: underline;
+  }
   h1{
-    color: var(--main-color);
+    border: 2px var(--secondary-color) solid;
+    color: var(--secondary-color);
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xxx-large;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    width: 50%;
+    padding: 1rem 0;
   }
   h2{
     color:var(--main-color);
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xx-large;
+    
+  }
+  h3{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xx-large;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+  }
+  background-color: rgb(240, 240, 240);
+  p{
+    line-height: 1.5rem;
+  }
+  p,
+  label{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
   }
 }
 
@@ -26,6 +68,7 @@ body{
 
 header{
   nav{
+    padding: 0 2rem;
     background-color: var(--main-color);
     display: flex;
     justify-content:space-between;
@@ -33,18 +76,232 @@ header{
     gap: 2rem;
     min-height: 10rem;
     .navigation{
+
+      padding: 0.5rem;
+      border-radius: 20px;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      margin-right: 3rem;
+      
     }
     .logo{
-      max-width: 5rem;
+      border: 2px var(--third-color) solid;
+      -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+      box-shadow: 5px 5px 15px 5px #000000;
+      max-width: 6rem;
+      border-radius: 13% 87% 18% 82% / 2% 16% 84% 98% ;
+      background-color: var(--secondary-color);
+      margin-left: 3rem;
+    }
+  }
+  .titre{
+    border: 2px var(--secondary-color) solid;
+    background-image: url("https://www.macapflag.com/blog/wp-content/uploads/2021/05/le-metier-de-developpeur.jpg");
+    background-position: bottom;
+    background-size: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem;
+    min-height: 22rem;
+    margin: 6rem 7%;
+    border-radius: 20px;
+    -webkit-box-shadow: 23px 3px 28px -7px rgba(0,0,0,0.24); 
+    box-shadow: 23px 3px 28px -7px rgba(0,0,0,0.24);
+    
+    .logo2{
+      width: 30%;
+      height: 30%;
+      min-width: 15rem; 
+    }
+    .logo2:hover{
+      opacity: 0.9;
+    }
+    .logo1{
+      height: 17%;
+      width: 24%;
+      min-width: 12rem;
+    }
+    .logo1:hover{
+      opacity: 0.9;
+    }
+    .titres-articles{
+      display: none;
+      margin-right: 6rem;
     }
   }
 }
+
 main{
   .articles{
+    
+    height: 60%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .HTML{
+      color: #ddd6de;
+      margin: 3rem 0 3rem 0;
+      background-color:var(--main-color);
+      border: 4px var(--secondary-color) solid;
+      border-radius: 20px;
+      padding: 4%;
+      width: 35%;
+      min-width: 25rem;
+      height: 43rem;
+      min-height: 35rem;
+      -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+      box-shadow: 5px 5px 15px 5px #000000;
+      .titres-articles{
+        background: linear-gradient(var(--main-color), var(--secondary-color)) ;
+        border-radius: 44% 56% 59% 41% / 100% 0% 100% 0%  ;
+        height: 3rem;
+        color: #ddd6de;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+      p{
+        width: 90%;
+        min-width: 10%;
+        height: 70%;
+        text-align: center;
+        margin: auto;
+      }
+    }
   }
+  .A-propos{
+    
+    margin: 4rem auto;
+    max-width: 50%;
+    h2{
+      
+      height: 3rem;
+      margin-bottom: 3rem;
+    }
+    p{
+      
+    }
+  }
+  .Contact{
+    -webkit-box-shadow: 23px 3px 28px -7px rgba(0,0,0,0.24); 
+    box-shadow: 23px 3px 28px -7px rgba(0,0,0,0.24);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 3rem auto;
+    max-width: 50%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    .email{
+      
+      grid-column-start: 1;
+      grid-column-end: 3;
+      .textmail{
+        width: 100%;
+        height: 1.5rem;
+        border-radius: 20px;
+      }
+    }
+    .texte{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      .message-texte{
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    .nom{
+      .texte-nom{
+        width: 100%;
+        height: 1.5rem;
+        border-radius: 20px;
+      }
+    }
+    .prenom{
+      .texte-prenom{
+        width: 100%;
+        height: 1.5rem;
+        border-radius: 20px;
+      }
+    }
+    .bouton{
+      color: var(--main-color);
+      font-size: large;
+      font-weight: 550;
+      max-width: 50%;
+      min-width: 30%;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin: auto;
+      background-color: var(--secondary-color);
+      height: 3rem;
+      border-radius: 20px;
+      -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+      box-shadow: 5px 5px 15px 5px #000000;
+    }
+    .bouton:hover{
+      background-color: var(--third-color);
+      cursor: pointer;
+    }
+
+  }
+}
+footer{
+  color: #ddd6de;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  height: 10rem;
+  background-color: var(--main-color);
+  
+}
+
+@media screen and (max-width: 992px){
+  body{
+    h1{
+      width: 80%;
+    }
+  }
+  header{
+    margin-bottom: 6rem;
+    nav{
+      flex-direction: column;
+      .navigation{
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 2rem;
+      }
+      .logo{
+        max-width: 10rem;
+        margin-top: 2rem;
+      }
+    }
+    .titre{
+      display: none;
+    }
+  }
+  main{
+    .articles{
+      flex-direction: column;
+      gap: 6rem;
+      .HTML{
+        width: 70%;
+      } 
+    }
+    .A-propos{
+      max-width: 75%;
+    }
+    .Contact{
+      max-width: 75%;
+    }
+  }
+  
 }
